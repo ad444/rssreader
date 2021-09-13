@@ -1,0 +1,24 @@
+{
+    "websiteCards":[
+        {
+            "header":"Moneycontrol",
+            "link":"https://www.moneycontrol.com/",
+            "logo":"https://img-d01.moneycontrol.co.in/images/2019/english/inters_logo.jpg"
+        },
+        {
+            "header":"NSE-India",
+            "link":"https://www.nseindia.com/",
+            "logo":"https://www.nseindia.com/assets/images/favicon.ico"
+        },
+        {
+            "header":"Udemy",
+            "link":"https://www.udemy.com/",
+            "logo":"https://www.udemy.com/staticx/udemy/images/v7/favicon-32x32.png"
+        },
+        {
+            "header":"Khan Academy",
+            "link":"https://www.khanacademy.org/",
+            "logo":"https://www.khanacademy.org/favicon.ico?logo"
+        }
+    ]
+}

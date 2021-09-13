@@ -1,0 +1,24 @@
+{
+    "educationCards":[
+        {
+            "header":"W3Schools",
+            "link":"https://www.w3schools.com/",
+            "logo":"https://www.w3schools.com/favicon.ico"
+        },
+        {
+            "header":"IndiaEducation",
+            "link":"https://indiaeducation.net/",
+            "logo":"https://indiaeducation.net/favicon.ico"
+        },
+        {
+            "header":"Meritnation",
+            "link":"https://www.meritnation.com/",
+            "logo":"https://img-nm.mnimgs.com/img/site_content/meritnation-unit-of-aakash_color.svg"
+        },
+        {
+            "header":"BYJU'S",
+            "link":"https://byjus.com/",
+            "logo":"https://cdn1.byjus.com/byjusweb/img/favicon-32x32.png"
+        }
+    ]
+}

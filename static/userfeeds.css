@@ -1,0 +1,50 @@
+#yourFeedsSectionLink{
+    display:none;
+}
+#leftSideBarContainer{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#navigatetohome{
+    font-weight: bold;
+    text-align: center;
+    position:relative;
+    top:20%;
+    transform: translateY(-20%);
+    background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* #card{
+    background-image:linear-gradient(to bottom left, rgba(134,122,233,1), rgba(134,122,233,0));
+    border-radius: 3px;
+} */
+#feedTitle{
+    font-size:20px;
+    padding:15px 0px;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.deleteFeeds{
+    border: none;
+    position:relative;
+    float: right;
+    background-color: transparent;
+    font-size: 22px;
+    color: #3737aa;
+    margin: 0px;
+    padding-right: 0;
+    z-index: 2;
+}
+.deleteFeeds:focus{
+    outline: none;
+}

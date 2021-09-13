@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Daily Feeds
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+  link(rel='stylesheet', href='../static/index.css', type='text/css')
+#header.container-fluid
+  #headerContainer.row
+    .col-6.col-xs-6.col-sm-5
+      p#applicationName Daily Feeds
+    .col-6.col-xs-6.col-sm-7
+      form(action="/login" method="POST" class="linktologinForm headerloginButton")
+       button(type="button" id="loginBtn" onclick="call()") Login
+#firstImpression.container-fluid
+  #section.row
+    .col-12.col-sm-10.mx-auto
+      #sectionContent
+        p#sectionContentFirstText Find all the latest news, articles, blogs and more all at one place
+        p#sectionContentSecondText
+          em &quot;Add personalized content from your trusted resources&quot;
+        form(action="/login" method="POST" id="linktologinForm")
+          button(type="button" id="getStartedBtn" onclick="call()") Get Started
+#secondSection.container-fluid
+  .row.homepageSecondSection
+    .col-2.d-none.d-sm-block
+    .col-6.col-sm-4
+      img.homepageImages.left(src='/static/images/book.png', alt='openbookImage')
+    .col-6.col-sm-4
+      p.homepageImageContent Read personalized content from your trusted resources
+    .col-2.d-none.d-sm-block
+  .row.homepageSecondSection
+    .col-2.d-none.d-sm-block
+    .col-6.col-sm-4
+      p.homepageImageContent
+        | Get the latest updates, featured news and more according to your professional interest.
+    .col-6.col-sm-4
+      img.homepageImages.right(src='/static/images/professional.png', alt='professionalImage')
+    .col-2.d-none.d-sm-block
+  #footer.row
+    #footerContent.col-12
+      .row.mb-2
+        .col-6
+           form(action="/login" method="POST" id="footerGetStarted")
+            button(type="button" onclick="call()" id="getStartedLinkFooter") Get Started
+        .col-6
+          p#leftFooterLink
+            a(href='/contact', alt='loading error') Contact Us
+      #copyrightBar.row
+        .col-12.text-center
+          p#copyrightText All the &copy; copyrights are reserved for this website
+script(src="../static/indexStatic.js")
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')

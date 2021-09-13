@@ -1,0 +1,47 @@
+extends userdashboard.pug
+
+block links 
+  link(rel='stylesheet', href='/static/homedashboard.css', type='text/css')
+block navigationlinks 
+   p#yourFeedsSectionLink 
+    a(href="/dashboard/yourfeeds") View your feeds 
+block centerContainer
+    #centerContainer
+     #centerContainerContent.container-fluid
+        #featuredSourcesHeader.row
+         .col-12.p-0
+            p#featuredSources Featured Sources
+        #featuredSourcesContainer.row
+         .col-12
+            p.sectionHeading.mt-5 News
+         #newsSection.col-12
+            #newsSectionContainer.row
+         .col-12
+            p.sectionHeading Websites
+         #websiteSection.col-12
+            #websiteSectionContainer.row
+         .col-12
+            p.sectionHeading Education
+         #educationSection.col-12
+            #educationSectionContainer.row
+block navigationLinks
+   p.navigationLinks 
+    a(href="/dashboard/yourfeeds") View your feeds
+block dynamicHeading  
+    p#contentHeading Featured Sources
+block mobileContentSection
+      #mobileFeaturedSourcesContainer.row
+         .col-12
+            p.mobileSectionHeading News
+         #mobileNewsSection.col-12
+            #mobileNewsSectionContainer.row
+         .col-12
+            p.mobileSectionHeading Websites
+         #mobileWebsiteSection.col-12
+            #mobileWebsiteSectionContainer.row
+         .col-12
+            p.mobileSectionHeading Education
+         #mobileEducationSection.col-12
+            #mobileEducationSectionContainer.row 
+block scripts 
+ script(synchronized src='../static/homedashboard.js')

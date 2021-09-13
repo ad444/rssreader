@@ -1,0 +1,29 @@
+extends userdashboard.pug 
+
+block links 
+   link(rel="stylesheet" href="/static/newsChannelsContent.css" type="text/css")
+
+block navigationlinks
+ div#linksContainer
+   p#navigatetohomedasboard
+    a(href="/dashboard") Home Dashboard
+
+block centerContainer 
+  #centerContainer
+     #centerContainerContent.container-fluid
+        #featuredSourcesHeader.row
+         .col-12.p-0
+            p#featuredSources #{channelName} - #{header}
+            p#featuredSourcesFeeds #{feed}
+        #ifeaturedSourcesContainer.row
+block navigationLinks
+   p.navigationLinks 
+    a(href="/dashboard/yourfeeds") View your feeds
+   p.navigationLinks 
+    a(href="/dashboard") Home Dashboard
+block dynamicHeading  
+    p#contentHeading #{channelName} - #{header}
+block mobileContentSection
+      #mobileFeaturedSourcesContainer.row
+block scripts
+   script(src="/static/newsChannelsContent.js")

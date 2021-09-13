@@ -1,0 +1,24 @@
+extends userdashboard.pug
+
+block links
+ link(rel="stylesheet" href="/static/ihomedashboard.css" type="text/css")
+block navigationlinks
+  div#linksContainer
+   p#userFeedsSectionLink 
+    a(href="/dashboard/yourfeeds") View your feeds
+   p#navigatetohomedasboard
+    a(href="/dashboard") Home Dashboard
+block centerContainer 
+  #centerContainer
+     #centerContainerContent.container-fluid
+        #featuredSourcesHeader.row
+         .col-12.p-0
+            p#featuredSources #{title}
+            p#featuredSourcesURL #{url}
+        #ifeaturedSourcesContainer.row
+block dynamicHeading  
+    p#contentHeading #{title}
+block mobileContentSection
+      #mobileFeaturedSourcesContainer.row
+block scripts 
+ script(src='/static/ihomedashboard.js')

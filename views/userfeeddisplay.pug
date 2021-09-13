@@ -1,0 +1,31 @@
+extends userdashboard.pug
+
+block links
+ link(rel="stylesheet" href="/static/userfeeddisplay.css" type="text/css")
+ link(rel="stylesheet" href="/static/userfeeds.css" type="text/css")
+block navigationlinks
+ div#linksContainer
+   p#userFeedsSectionLink 
+    a(href="/dashboard/yourfeeds") View your feeds
+   p#navigatetohomedasboard
+    a(href="/dashboard") Home Dashboard 
+block centerContainer 
+  #centerContainer
+     #centerContainerContent.container-fluid
+        #featuredSourcesHeader.row
+         .col-12.p-0
+            p#featuredSources #{title}
+            p#jsondata #{data}
+        #ifeaturedSourcesContainer.row
+block navigationLinks
+   p.navigationLinks 
+    a(href="/dashboard/yourfeeds") View your feeds
+   p.navigationLinks 
+    a(href="/dashboard") Home Dashboard
+block dynamicHeading  
+   p#contentHeading #{title}
+block mobileContentSection
+   #mobileFeaturedSourcesContainer.row
+block scripts 
+block scripts 
+ script(synchronized src='/static/userfeeddisplay.js')

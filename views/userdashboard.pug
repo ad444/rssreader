@@ -1,0 +1,53 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Dashboard
+  block links
+  link(rel="stylesheet" href="/static/userdashboard.css" type="text/css")
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+#mainContainer
+  #leftSideBar
+    block navigationlinks
+    #leftSideBarContainer
+     form(action="/dashboard/yourfeeds" method="POST" id="feedForm" autocomplete="off")
+      input#feedEnterBar(type='text', name='feed', placeholder='Enter your RSS feed')
+      button(type="button" id="feedCreateBtn") Create a Feed
+  block centerContainer
+  #rightSideBar
+    #rightSideBarContainer
+      #moon
+        #upper(onclick='applicationTheme(this)')
+        #lower(onclick='applicationTheme(this)')
+      p#logoutLink
+        a(href='/')
+          b Log Out
+//- For devices less than 992px wide
+#mobileMainContainer
+  button#mobileDarkThemeBtn(onclick='mobileApplicationTheme()')
+   i.fas.fa-moon
+  #mobileHeader.container-fluid
+    .row
+      .col-8.col-sm-6
+        p#applicationName Daily Feeds
+        block navigationLinks
+      .col-4.col-sm-6
+        #mobileFeedBar
+         form(action="/dashboard/yourfeeds" method="POST" id="mobileFeedForm" autocomplete="off")
+          input#mobileEnterFeedBar(type='text', name="feed", placeholder='Enter RSS feed...')
+          button#mobileFeedBarButton(type='button') RSS
+        p#mobileLogOutLink
+          a(href='/') Log Out
+  #mobileMainContentContainer.container-fluid
+    #mobileMainContent.row
+      .col-12
+        block dynamicHeading
+    block mobileContentSection 
+block scripts
+script(src="/static/userdashboard.js")
+script(src="https://kit.fontawesome.com/afa96094d4.js" crossorigin="anonymous")
+script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
