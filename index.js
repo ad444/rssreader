@@ -151,8 +151,7 @@ app.get('/dashboard/yourfeeds', (req, res) => {
 });
 
 app.post('/dashboard/yourfeeds', (req, res) => {
-
-    let checkingPattern = /[0-9]/g;
+    let checkingPattern = /yourfeeds\/[0-9]+/g;
     if (checkingPattern.test(JSON.stringify(req.body))) {
         let testingFile = fs.readFileSync('./static/json/testing.txt', 'utf-8');
         let dataArray = JSON.parse(testingFile).data;
@@ -178,6 +177,7 @@ app.post('/dashboard/yourfeeds', (req, res) => {
                 title: data.title,
                 feedURL: req.body.feed
             }
+            console.log(transferrableData);
             file.writeJSON('testing', transferrableData);
             res.render('userfeeds');
             app.get(`/dashboard/yourfeeds/${testingFileData.data.length}`, (req, res) => {
