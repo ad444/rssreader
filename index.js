@@ -3,7 +3,7 @@ const fs = require('fs');
 const data = require('./newsSectionContainer');
 const feeds = require('./newsChannelsContentFeeds');
 const newsChannelsData = require('./newsChannelsContent');
-const file = require('./jsonReader');
+const file = require('./jsonWrite');
 let Parser = require('rss-parser');
 let parser = new Parser();
 const path = require('path');
@@ -178,7 +178,7 @@ app.post('/dashboard/yourfeeds', (req, res) => {
                 title: data.title,
                 feedURL: req.body.feed
             }
-            file.readJSON('testing', transferrableData);
+            file.writeJSON('testing', transferrableData);
             res.render('userfeeds');
             app.get(`/dashboard/yourfeeds/${testingFileData.data.length}`, (req, res) => {
                 res.render('userfeeddisplay', { title: data.title, data: JSON.stringify(data) });
