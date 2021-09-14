@@ -1,6 +1,7 @@
 html, body{
     height:100%;
     margin:0;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -30,6 +31,7 @@ html, body{
     background-color: #f6f6f6;
 }
 #leftSideBarContainer{
+    font-family: 'Hind Siliguri', sans-serif;
     width: 100%;
     position: absolute;
     left: 50%;
@@ -72,6 +74,7 @@ html, body{
     transform: translateX(-50%);
 }
 #centerContainer{
+    font-family: 'Hind Siliguri', sans-serif;
     position:fixed;
     width:60%;
     height:100%;
@@ -129,6 +132,7 @@ html, body{
     background-color: #f6f6f6;
 }
 #rightSideBarContainer{
+    font-family: 'Hind Siliguri', sans-serif;
     position:absolute;
     width:100%;
     margin:0px;
@@ -203,7 +207,7 @@ html, body{
         border-bottom: 18px solid transparent; 
         background-color: #f6f6f6;
         color: rgba(81, 18, 129,1);
-        font-size:16px;
+        font-size:14px;
         font-weight:550;
         outline: none;
         transition:all 1s;
@@ -281,7 +285,7 @@ html, body{
         border-bottom: 18px solid transparent; 
         background-color: #f6f6f6;
         color: rgba(81, 18, 129,1);
-        font-size:16px;
+        font-size:14px;
         font-weight:550;
         outline: none;
         transition:all 1s;
@@ -348,7 +352,7 @@ html, body{
         margin-right:10px;
     }
     #mobileEnterFeedBar{
-        width: 170px;
+        width: 200px;
         height: 2px;
         padding: 6px 2px;
         border: none;
@@ -357,7 +361,7 @@ html, body{
         border-bottom: 18px solid transparent;
         background-color: #f6f6f6;
         color: rgba(81, 18, 129,1);
-        font-size:16px;
+        font-size:14px;
         font-weight:550;
         outline: none;
     }
@@ -413,7 +417,7 @@ html, body{
 @media screen and (max-width : 992px){
     #mobileMainContainer{
         display: block;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Hind Siliguri', sans-serif;
     }
     #mainContainer{
         display: none;
@@ -424,6 +428,13 @@ html, body{
         background-color: rgb(120 25 184);
         color:#f6f6f6;
         z-index: 99;
+    }
+    #Logo{
+        color:rgb(246, 246, 246);
+    }
+    #Logo:active{
+        color:rgb(246, 246, 246);
+        text-decoration: none;
     }
     #mobileDarkThemeBtn{
         position: absolute;
@@ -441,6 +452,7 @@ html, body{
     .navigationLinks{
         display: inline-block;
         margin-bottom: 5px;
+        font-size:14px;
         background: -webkit-linear-gradient(rgb(246, 245, 247), rgb(233, 233, 233));
         background-clip: text;
         -webkit-background-clip: text;
@@ -476,6 +488,13 @@ html, body{
     }
     #mobileMainContainer{
         display: none;
+    }
+    #Logo{
+        color:rgb(81, 18, 129);
+    }
+    #Logo:active{
+        color:rgb(81, 18, 129);
+        text-decoration: none;
     }
 }
 

@@ -19,6 +19,7 @@ let centerContainer = document.getElementById('centerContainer');
 let rightSideBar = document.getElementById('rightSideBar');
 let upper = document.getElementById('upper');
 let lower = document.getElementById('lower');
+let logo = document.getElementById('Logo');
 
 // function to apply theme on devices having width greater than 992px
 const applicationTheme = () => {
@@ -27,6 +28,7 @@ const applicationTheme = () => {
     let newsChannelsSectors = document.querySelectorAll("#newsChannelsSectors");
     if (themeChecker === "true") {
         // white theme
+        logo.style.cssText = "color:rgb(246, 246, 246)";
         leftSideBar.style.cssText = "background-color:#f6f6f6";
         centerContainer.style.cssText = "background-color:#ffffff; color:#111111;";
         Array.from(card).forEach((element) => {
@@ -45,6 +47,7 @@ const applicationTheme = () => {
         localStorage.setItem('theme', themeChecker);
     } else {
         // dark theme
+        logo.style.cssText = "color:rgb(81, 18, 129)";
         leftSideBar.style.backgroundColor = "#222222";
         centerContainer.style.cssText = "background-color:#111111; color:#f6f6f6";
         Array.from(card).forEach((element) => {
@@ -71,6 +74,7 @@ function userApplicationTheme() {
     let newsChannelsSectors = document.querySelectorAll("#newsChannelsSectors");
     if (themeChecker === "false") {
         // white theme
+        logo.style.cssText = "color:rgb(246, 246, 246)";
         leftSideBar.style.backgroundColor = "#f6f6f6";
         centerContainer.style.cssText = "background-color:#ffffff; color:#111111";
         Array.from(card).forEach((element) => {
@@ -87,6 +91,7 @@ function userApplicationTheme() {
         upper.style.backgroundColor = "#222222";
     } else {
         // dark theme
+        logo.style.cssText = "color:rgb(81, 18, 129)";
         leftSideBar.style.backgroundColor = "#222222";
         centerContainer.style.cssText = "background-color:#111111; color:#f6f6f6";
         Array.from(card).forEach((element) => {
@@ -104,7 +109,7 @@ function userApplicationTheme() {
     }
 }
 
-// function to apply theme on devices having width less than 992px
+// function to apply theme on devices having width greater than 992px
 if (screen.width >= 992) {
     userApplicationTheme();
 }
@@ -112,7 +117,6 @@ if (screen.width >= 992) {
 // for mobile devices having width less than 992px
 let mobileThemeChecker = localStorage.getItem('mobileTheme');
 let mobileFeedBarButton = document.getElementById('mobileFeedBarButton');
-
 let mobileMainContentContainer = document.getElementById('mobileMainContentContainer');
 let mobileDarkThemeBtn = document.getElementById('mobileDarkThemeBtn');
 let mobileHeader = document.getElementById('mobileHeader');
@@ -127,6 +131,7 @@ function mobileApplicationTheme() {
 
     if (mobileThemeChecker === "true") {
         //white theme
+        logo.style.cssText = "color:rgb(246, 246, 246)";
         mobileDarkThemeBtn.innerHTML = `
          <i class="fas fa-moon"></i>
         `;
@@ -148,6 +153,7 @@ function mobileApplicationTheme() {
         localStorage.setItem('mobileTheme', mobileThemeChecker);
     } else {
         //dark theme
+        logo.style.cssText = "color:rgb(81, 18, 129)";
         mobileDarkThemeBtn.innerHTML = `
          <i class="fas fa-sun"></i>
         `;
@@ -178,6 +184,7 @@ function mobileUserApplicationTheme() {
     let applicationName = document.getElementById('applicationName');
     if (mobileThemeChecker === "false") {
         // white theme
+        logo.style.cssText = "color:rgb(246, 246, 246)";
         mobileDarkThemeBtn.innerHTML = `
          <i class="fas fa-moon"></i>
         `;
@@ -197,6 +204,7 @@ function mobileUserApplicationTheme() {
         });
     } else {
         // dark theme
+        logo.style.cssText = "color:rgb(81, 18, 129)";
         mobileDarkThemeBtn.innerHTML = `
          <i class="fas fa-sun"></i>
         `;

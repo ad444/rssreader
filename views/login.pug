@@ -12,16 +12,16 @@ head
       h1#applicationName Daily Feeds
 #formContainer.container-fluid
   #loginFormFieldSet.row
-    .col-12.col-sm-10.col-md-6.mx-auto
+    #loginFormFieldSetContainer.col-12.col-sm-10.col-md-6.mx-auto
       p#loginFormHeader Login
       form(action='/dashboard', method='post', id="loginform")
         .form-group
           label(for='name') Name :
           input#name.form-control(type='text', name='name', placeholder='Enter your name', required='')
         .form-group
-          label(for='email') Email address
+          label(for='email') Email address :
           input#email.form-control(type='email', name='email', aria-describedby='emailHelp', placeholder='Enter your email address', required='')
-          small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+          small#emailHelp.form-text We&apos;ll never share your email with anyone else.
         button#loginFormSubmitBtn(type='button') Submit
 script(src="/static/login.js")
 script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')

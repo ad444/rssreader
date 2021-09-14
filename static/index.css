@@ -2,7 +2,7 @@ html, body{
     height:100%;
     margin:0;
     background-color: #f5f5f5;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 #header{
     width:100%;
@@ -39,16 +39,8 @@ html, body{
     cursor: pointer;
     outline:none;
 }
-#firstImpression{
-    height:100%;
-}
-#section{
-    height:100%;
-}
 #sectionContent{
-    position:relative;
-    top:60%;
-    transform: translateY(-60%);
+    margin-top:250px;
 }
 #linktologinForm{
     text-align: center;
@@ -64,7 +56,7 @@ html, body{
     outline:none;
 }
 .homepageSecondSection{
-    margin-bottom:90px;
+    margin:90px 0px;
 }
 .left{
     float: right;
@@ -135,6 +127,9 @@ html, body{
         font-size: 16px;
         line-height: 32px;
     }
+    #sectionContent{
+        margin-top:150px;
+    }
     #sectionContentFirstText{
         font-size:22px;
         font-weight: 500;
@@ -172,11 +167,11 @@ html, body{
         text-align: center;
     }
     #copyrightText{
-        font-size: 16px;
-        padding:2px 0px;
+        font-size: 14px;
+        padding:10px 0px;
     }
 }
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:768px){
     #headerContainer{
         padding:15px 0px;
     }
@@ -189,6 +184,9 @@ html, body{
         font-size: 18px;
         line-height: 36px;
         margin-right: 10px;
+    }
+    #sectionContent{
+        margin-top:200px;
     }
     #sectionContentFirstText{
         font-size:26px;
@@ -231,7 +229,65 @@ html, body{
         padding:5px 0px;
     }
 }
-@media screen and (min-width:992px){
+@media screen and (min-width:768px) and (max-width:1200px){
+    #headerContainer{
+        padding:15px 0px;
+    }
+    #applicationName{
+        font-size:28px;
+        font-weight:500;
+        margin-left:10px;
+    }
+    #loginBtn{
+        font-size: 18px;
+        line-height: 36px;
+        margin-right: 10px;
+    }
+    #sectionContent{
+        margin-top:200px;
+    }
+    #sectionContentFirstText{
+        font-size:26px;
+        font-weight: 500;
+        text-align: center;
+    }
+    #sectionContentSecondText{
+        font-size:20px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .left{
+        float: none;
+    }
+    .right{
+        float: none;
+    }
+    .homepageImages{
+        position: relative;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+    .homepageImageContent{
+        font-size:20px;
+        text-align: center;
+    }
+    #getStartedLinkFooter{
+        font-size: 22px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #leftFooterLink{
+        font-size: 22px;
+        text-align: center;
+    }
+    #copyrightText{
+        font-size: 18px;
+        padding:5px 0px;
+    }
+}
+@media screen and (min-width:1200px){
     #headerContainer{
         padding:15px 0px;
     }

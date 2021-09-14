@@ -16,6 +16,11 @@ block centerContainer
             p#featuredSources #{title}
             p#featuredSourcesURL #{url}
         #ifeaturedSourcesContainer.row
+block navigationLinks
+  p.navigationLinks 
+    a(href="/dashboard/yourfeeds") View your feeds
+  p.navigationLinks 
+    a(href="/dashboard") Home Dashboard
 block dynamicHeading  
     p#contentHeading #{title}
 block mobileContentSection
