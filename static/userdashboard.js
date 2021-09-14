@@ -235,7 +235,7 @@ let mobileInputBarDisplayChecker = true;
 
 let mobileFeedForm = document.getElementById('mobileFeedForm');
 mobileFeedBarButton.addEventListener('click', () => {
-    if (screen.width < 576) {
+    if (screen.width <= 576) {
         if (mobileInputBarDisplayChecker) {
             // checking application theme
             if (mobileThemeChecker === "false") {

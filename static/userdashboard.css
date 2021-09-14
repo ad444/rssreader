@@ -336,7 +336,7 @@ html, body{
     }
 }
 /* For medium and large devices */
-@media screen and (min-width : 576px) and (max-width: 992px){
+@media screen and (min-width : 577px) and (max-width: 992px){
     #applicationName{
         font-size:28px;
         font-weight:500;
@@ -352,7 +352,7 @@ html, body{
         margin-right:10px;
     }
     #mobileEnterFeedBar{
-        width: 200px;
+        width: 180px;
         height: 2px;
         padding: 6px 2px;
         border: none;
@@ -361,7 +361,7 @@ html, body{
         border-bottom: 18px solid transparent;
         background-color: #f6f6f6;
         color: rgba(81, 18, 129,1);
-        font-size:14px;
+        font-size:15px;
         font-weight:550;
         outline: none;
     }
