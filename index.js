@@ -1,15 +1,15 @@
 const express = require('express');
 const fs = require('fs');
-const data = require('./newsSectionContainer');
-const feeds = require('./newsChannelsContentFeeds');
-const newsChannelsData = require('./newsChannelsContent');
-const file = require('./jsonWrite');
+const data = require('./custom_modules/newsSectionContainer');
+const feeds = require('./custom_modules/newsChannelsContentFeeds');
+const newsChannelsData = require('./custom_modules/newsChannelsContent');
+const file = require('./custom_modules/jsonWrite');
 let Parser = require('rss-parser');
 let parser = new Parser();
 const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ClientDetails', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
