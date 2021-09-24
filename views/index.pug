@@ -4,17 +4,20 @@ head
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title Daily Feeds
+  link(rel="icon" href="/static/images/D F.png" type="image/png" sizes="32x32") 
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
   link(rel='stylesheet', href='../static/index.css', type='text/css')
 #header.container-fluid
   #headerContainer.row
     .col-6.col-xs-6.col-sm-5
-      p#applicationName Daily Feeds
+      //- p#applicationName Daily Feeds
+      a(href="/" id="applicationName")
+       img(src="/static/images/D F.png" alt="Daily_Feeds_Logo" width="64px" height="64px")
     .col-6.col-xs-6.col-sm-7
       form(action="/login" method="POST" class="linktologinForm headerloginButton")
        button(type="button" id="loginBtn" onclick="call()") Login
 #firstImpression.container-fluid
-  #section.row
+  #section.row 
     .col-12.col-sm-10.mx-auto
       #sectionContent
         p#sectionContentFirstText Find all the latest news, articles, blogs and more all at one place

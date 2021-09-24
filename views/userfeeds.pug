@@ -5,6 +5,9 @@ block links
 block navigationlinks 
  p#navigatetohome
   a(href="/dashboard") Home Dashboard
+block rssdetailsLink 
+   p#rssdetailsLink 
+    a(href="/dashboard/rssdetails") What is RSS?
 block centerContainer 
   #centerContainer
      #centerContainerContent.container-fluid
@@ -12,6 +15,7 @@ block centerContainer
          .col-12.p-0
             p#featuredSources Your Feeds
         #ifeaturedSourcesContainer.row
+//-for devices having width less than 992px   
 block navigationLinks
    p.navigationLinks 
     a(href="/dashboard") Home Dashboard

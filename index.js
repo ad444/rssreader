@@ -9,7 +9,7 @@ let parser = new Parser();
 const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/ClientDetails', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -55,6 +55,10 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+app.get('/dashboard/rssdetails',(req,res)=>{
+  res.render('rssdetails');
+})
+
 app.get('/dashboard', (req, res) => {
     res.render('homedashboard');
 });
@@ -75,7 +79,7 @@ data.jsonFile.newscards.forEach((element) => {
     return app.get(`/dashboard/${element.url}`, (req, res) => {
         res.render('i', { title: element.header, url: element.url });
     });
-});
+}); 
 
 //newsChannelsContent.js module
 newsChannelsData.newsChannels.newsChannelsContent.forEach((element) => {
@@ -183,10 +187,10 @@ app.post('/dashboard/yourfeeds', (req, res) => {
             app.get(`/dashboard/yourfeeds/${testingFileData.data.length}`, (req, res) => {
                 res.render('userfeeddisplay', { title: data.title, data: JSON.stringify(data) });
             });
-        })();
+        })();6
     }
 });
 
 app.listen(8080, () => {
     console.log("server is listening at 8080 port");
-});
+});            

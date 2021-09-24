@@ -17,10 +17,10 @@ head
       form(action='/dashboard', method='post', id="loginform")
         .form-group
           label(for='name') Name :
-          input#name.form-control(type='text', name='name', placeholder='Enter your name', required='')
+          input#name.form-control(class="userDetails" type='text', name='name', placeholder='Enter your name')
         .form-group
           label(for='email') Email address :
-          input#email.form-control(type='email', name='email', aria-describedby='emailHelp', placeholder='Enter your email address', required='')
+          input#email.form-control(class="userDetails" type='email', name='email', aria-describedby='emailHelp', placeholder='Enter your email address')
           small#emailHelp.form-text We&apos;ll never share your email with anyone else.
         button#loginFormSubmitBtn(type='button') Submit
 script(src="/static/login.js")

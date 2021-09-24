@@ -5,7 +5,7 @@ featuredSourcesFeeds.items.forEach((element)=>{
     ifeaturedSourcesContainer.innerHTML += `
       <div class="col-10 mx-auto">
          <p id="title">${element.title}</p>
-         <p id="link"><a href='${element.link}'>${element.link}</a></p>
+         <p id="link"><a href='${element.link}' target="_blank">${element.link}</a></p>
          <hr id="hr"/>
       </div>
     `;
@@ -18,7 +18,7 @@ featuredSourcesFeeds.items.forEach((element)=>{
   mobileFeaturedSourcesContainer.innerHTML += `
     <div class="col-12 col-md-10 mx-auto">
        <p id="title">${element.title}</p>
-       <p id="link"><a href='${element.link}'>${element.link}</a></p>
+       <p id="link"><a href='${element.link}' target="_blank">${element.link}</a></p>
        <hr id="hr"/>
     </div>
   `;

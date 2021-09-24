@@ -2,9 +2,7 @@
     display:none;
 }
 #linksContainer{
-    position:relative;
-    top:20%;
-    transform: translateY(-20%);
+    margin:110px 0px;
 }
 #navigatetohomedasboard{
     font-weight: bold;

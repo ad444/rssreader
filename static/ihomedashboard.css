@@ -1,7 +1,7 @@
 #linksContainer{
-    position:relative;
+    /* position:relative;
     top:20%;
-    transform: translateY(-20%);
+    transform: translateY(-20%); */
 }
 #navigatetohomedasboard{
     font-weight: bold;
@@ -19,13 +19,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* #card{
-    margin:auto;
-    margin-top: 20px;
-    background-image:linear-gradient(to bottom left, rgba(134,122,233,1), rgba(134,122,233,0));
-    border-radius: 3px;
-    height:100px;
-} */
 #newsChannelsSectors{
     text-align: center;
     font-size: 18px;

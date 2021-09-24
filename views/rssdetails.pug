@@ -1,0 +1,21 @@
+extends userdashboard.pug
+
+block links 
+  link(rel='stylesheet', href='/static/rssdetails.css', type='text/css')
+block navigationlinks 
+   p#yourFeedsSectionLink 
+    a(href="/dashboard/yourfeeds") View your feeds
+block centerContainer
+    #centerContainer
+     #centerContainerContent.container-fluid
+        #featuredSourcesHeader.row
+         .col-12.p-0
+            p#featuredSources RSS Information
+        #rssDetailsContainer.row
+block navigationLinks
+   p.navigationLinks 
+    a(href="/dashboard/yourfeeds") View your feeds
+block dynamicHeading  
+    p#contentHeading RSS Information
+block mobileContentSection
+      #mobileFeaturedSourcesContainer.row

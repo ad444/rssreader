@@ -1,7 +1,7 @@
 html, body{
     height:100%;
     margin:0;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -29,25 +29,11 @@ html, body{
     width:30%;
     height:100%;
     background-color: #f6f6f6;
+    overflow-y:auto;
 }
 #leftSideBarContainer{
-    font-family: 'Hind Siliguri', sans-serif;
     width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-#navigatetohome{
-    font-weight: bold;
-    text-align: center;
-    position:relative;
-    top:20%;
-    transform: translateY(-20%);
-    background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin:20px 0px;
 }
 #feedEnterBar{
     display:block;
@@ -73,8 +59,16 @@ html, body{
     left: 50%;
     transform: translateX(-50%);
 }
+#rssdetailsLink {
+    font-weight: bold;
+    padding-left:20px;
+    margin-top:40px;
+    background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 #centerContainer{
-    font-family: 'Hind Siliguri', sans-serif;
     position:fixed;
     width:60%;
     height:100%;
@@ -82,7 +76,7 @@ html, body{
 }
 #centerContainerContent{
     height:100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 #featuredSourcesHeader{
     position:fixed;
@@ -130,16 +124,12 @@ html, body{
     width:10%;
     height:100%;
     background-color: #f6f6f6;
+    overflow-y:auto;
 }
 #rightSideBarContainer{
-    font-family: 'Hind Siliguri', sans-serif;
-    position:absolute;
     width:100%;
-    margin:0px;
+    margin:110px 0px;
     padding:0px;
-    top:20%;
-    left:50%;
-    transform: translateX(-50%);
     text-align: center;
 }
 #moon{
@@ -174,7 +164,8 @@ html, body{
     margin-left:10px;
     cursor:pointer;
 }
-#logoutLink{
+.rightSideBarLink{
+    margin-top:40px;
     background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
     background-clip: text;
     -webkit-background-clip: text;

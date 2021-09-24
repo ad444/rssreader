@@ -1,16 +1,12 @@
-#linksContainer{
-    /* position:relative;
-    top:20%;
-    transform: translateY(-20%); */
-}
-#navigatetohomedasboard{
+#yourFeedsSectionLink{
     font-weight: bold;
     text-align: center;
+    margin:110px 0px;
     background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#featuredSourcesFeeds{
-    display:none;
+#rssDetailsContainer{
+    margin:20px 0px;
 }
