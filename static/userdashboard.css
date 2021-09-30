@@ -44,6 +44,7 @@ html, body{
     border-style: solid;
     border-image: linear-gradient(to right top, rgb(81, 18, 129), rgba(81, 18, 129,0));
     border-image-slice: 1;
+    border-radius:5px;
     padding: 10px;
 }
 #feedCreateBtn{
@@ -107,11 +108,13 @@ html, body{
     border-radius: 3px;
 }
 #link{
+    margin-bottom:0px;
     overflow:hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 #hr{
+    margin-top:0px;
     border:none;
     border-top-width:1px;
     border-top-style:solid;
@@ -137,7 +140,7 @@ html, body{
     height: auto;
     margin:0px;
     padding:0px;
-    margin-bottom:30px;
+    margin-bottom:50px;
     position: relative;
     left: 40%;
     transform: translateX(-40%);
@@ -164,7 +167,8 @@ html, body{
     cursor:pointer;
 }
 .rightSideBarLink{
-    margin-top:40px;
+    /* margin-top:40px; */
+    margin-bottom:10px;
     background: -webkit-linear-gradient(rgb(81,18,129), rgb(121, 82, 179));
     background-clip: text;
     -webkit-background-clip: text;
